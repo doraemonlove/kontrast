@@ -1,0 +1,57 @@
+common_args:
+  period: 1440
+  dataset_name: aiops2025
+
+experiments:
+  kontrast_LS_10:
+    - omega: 10
+      mode: 'LS'
+      K: 5
+      dataset_size: 40000
+      epoch: 100
+      batch_size: 10000
+      lstm_hidden_dim: 30
+      lstm_output_dim: 30
+      lr: 0.001
+      rate: 60
+      ignore: True
+  #     from_ckpt: '0520_011050_5430'
+  # kontrast_LS_20:
+  #   - omega: 20
+  #     mode: 'LS'
+  #     K: 5
+  #     dataset_size: 40000
+  #     epoch: 100
+  #     batch_size: 10000
+  #     lstm_hidden_dim: 30
+  #     lstm_output_dim: 30
+  #     lr: 0.001
+  #     rate: 60
+  #     ignore: True
+  #     from_ckpt: '0520_011100_3705'
+  # kontrast_P_10:
+  #   - omega: 10
+  #     mode: 'P'
+  #     K: 5
+  #     dataset_size: 40000
+  #     epoch: 100
+  #     batch_size: 10000
+  #     lstm_hidden_dim: 30
+  #     lstm_output_dim: 30
+  #     lr: 0.001
+  #     rate: 60
+  #     ignore: True
+  #     from_ckpt: '0520_011100_3790'
+  # kontrast_P_20:
+  #   - omega: 20
+  #     mode: 'P'
+  #     K: 5
+  #     dataset_size: 40000
+  #     epoch: 100
+  #     batch_size: 10000
+  #     lstm_hidden_dim: 30
+  #     lstm_output_dim: 30
+  #     lr: 0.001
+  #     rate: 60
+  #     ignore: True
+  #     from_ckpt: '0520_011100_9833'
